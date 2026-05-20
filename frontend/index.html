@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HorizonTechX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <div class="brand-logo">HorizonTechX</div>
+    <p class="brand-tag">A place to share moments, like Instagram.</p>
+
+    <div class="auth-forms">
+      <section class="card card-small">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <button type="submit">Log In</button>
+        </form>
+      </section>
+
+      <section class="card card-small">
+        <h2>Sign Up</h2>
+        <form id="registerForm">
+          <input type="text" id="registerUsername" placeholder="Username" required />
+          <input type="email" id="registerEmail" placeholder="Email" required />
+          <input type="password" id="registerPassword" placeholder="Password" required />
+          <button type="submit">Create Account</button>
+        </form>
+      </section>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

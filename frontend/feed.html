@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HorizonTechX Feed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feed-page">
+  <div class="topbar">
+    <div class="brand">HorizonTechX</div>
+    <div class="topbar-actions">
+      <a href="profile.html">Profile</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <main class="feed-layout">
+    <section class="feed-sidebar">
+      <div class="story-strip" id="storyStrip"></div>
+      <div class="card card-sidebar">
+        <h3>Suggested</h3>
+        <div id="suggestions"></div>
+      </div>
+    </section>
+
+    <section class="feed-column">
+      <div class="card card-post-input">
+        <textarea id="postContent" placeholder="Share a photo or thought..." rows="4"></textarea>
+        <button id="createPostButton">Post</button>
+      </div>
+
+      <section id="feed"></section>
+      <section id="feedStatus" class="status"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

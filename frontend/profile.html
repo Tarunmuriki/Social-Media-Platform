@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | HorizonTechX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="profile-page">
+  <div class="profile-topbar">
+    <div class="brand">HorizonTechX</div>
+    <nav>
+      <a href="feed.html">Feed</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </div>
+
+  <main class="profile-layout">
+    <section class="profile-card card">
+      <div id="profileHeader" class="profile-header"></div>
+      <div class="profile-image-upload">
+        <input type="file" id="profileImageInput" accept="image/*" />
+        <button id="uploadImageButton">Upload Photo</button>
+      </div>
+      <div id="profileDetails" class="profile-meta"></div>
+      <button id="followButton" class="button-secondary">Follow someone</button>
+    </section>
+
+    <section class="profile-posts card">
+      <h3>Your Posts</h3>
+      <div id="profilePosts"></div>
+    </section>
+
+    <section class="profile-recommendations card">
+      <h3>Find friends</h3>
+      <div id="suggestions"></div>
+    </section>
+
+    <section id="profileStatus" class="status"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
